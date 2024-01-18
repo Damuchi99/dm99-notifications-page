@@ -8,13 +8,19 @@
 }
 
 body {
-    width: 100%!important;
-    height: 100vh!important;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(247, 250, 253)!important;
+    background-color: white!important;
+}
+
+@media screen and (min-width: 600px) {
+    body{
+        width: 100%!important;
+        height: 100vh!important;
+        background-color: rgb(247, 250, 253)!important;
+    }
 }
 
 .attribution {
@@ -24,4 +30,37 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/*------------NOTIFICACIONES------------*/
+
+.notifications{
+    background-color: white;
+    padding: 20px;
+}
+
+.notifications .notification-counter{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notifications .notification-counter .notifications-title{
+    font-weight: 800;
+    font-size: 18px;
+    color: hsl(224, 21%, 14%);
+}
+
+.notifications .notification-counter .notification-number{
+    margin-left: 10px;
+    background-color: hsl(224, 21%, 14%);
+    color: white;
+    border-radius: 15%;
+    padding: 1px 12px;
+}
+
+.notifications .notification-counter .mark-as-read{
+    text-align: end;
+    font-size: 14px;
+    color: hsl(219, 14%, 63%);
 }
