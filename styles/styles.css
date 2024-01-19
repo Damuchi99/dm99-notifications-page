@@ -42,18 +42,18 @@ body {
 .notifications .notification-counter{
     padding: 10px 0px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .notifications .notification-counter .notifications-title{
     font-weight: 800;
     font-size: 18px;
-    color: hsl(224, 21%, 14%);
+    color: rgb(28, 32, 43);
 }
 
 .notifications .notification-counter .notification-number{
     margin-left: 10px;
-    background-color: hsl(224, 21%, 14%);
+    background-color: rgb(10, 49, 123);
     color: white;
     border-radius: 15%;
     padding: 1px 12px;
@@ -62,5 +62,52 @@ body {
 .notifications .notification-counter .mark-as-read{
     text-align: end;
     font-size: 14px;
-    color: hsl(219, 14%, 63%);
+    color: rgb(94, 103, 120);
+}
+
+.notifications .notification{
+    display: flex;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px 0px;
+}
+
+.notifications .unread-notification{
+    background-color: rgb(247, 250, 253);
+}
+
+.notifications .notification img{
+    float: left;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.notifications .notification .notification-description{
+    margin-left: 20px;
+    font-size: 14px;
+    color: rgb(94, 103, 120);
+}
+
+.notifications .notification .notification-description .username{
+    font-weight: 800;
+    color: rgb(28, 32, 43);
+}
+
+.notifications .notification .notification-description .post{
+    font-weight: 800;
+}
+
+.notifications .notification .notification-description .group{
+    font-weight: 800;
+    color: rgb(10, 49, 123);
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin-bottom: 2px;
+    background-color: rgb(246, 83, 81);
+    border-radius: 50%;
+    display: inline-block;
+    align-items: center;
 }
