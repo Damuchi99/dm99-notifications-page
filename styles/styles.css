@@ -78,10 +78,8 @@ body {
     background-color: var(--very-light-grayish-blue);
 }
 
-.notifications .notification img{
+.notifications .notification .profile{
     float: left;
-    max-width: 40px;
-    max-height: 40px;
 }
 
 .notifications .notification .notification-description{
@@ -102,6 +100,26 @@ body {
 .notifications .notification .notification-description .group{
     font-weight: 800;
     color: var(--blue);
+}
+
+.notifications .notification .notification-description .time{
+    color: var(--grayish-blue);
+}
+
+.notifications .notification .notification-description .message{
+    border: 1px solid var(--light-grayish-blue-2);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0px;
+}
+
+.notifications .notifications .post-image{
+    float: right;
+}
+
+.notifications .notification .profile, .notifications .notification .post-image{
+    max-width: 40px;
+    max-height: 40px;
 }
 
 .dot {
