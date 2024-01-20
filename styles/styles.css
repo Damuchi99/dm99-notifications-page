@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
+@import "variables.css";
+
 *{
     font-family: "Plus Jakarta Sans";
     box-sizing: border-box;
@@ -19,7 +21,7 @@ body {
     body{
         width: 100%!important;
         height: 100vh!important;
-        background-color: rgb(247, 250, 253)!important;
+        background-color: var(--very-light-grayish-blue)!important;
     }
 }
 
@@ -35,7 +37,7 @@ body {
 /*------------NOTIFICACIONES------------*/
 
 .notifications{
-    background-color: white;
+    background-color: var(--white);
     padding: 20px;
 }
 
@@ -48,13 +50,13 @@ body {
 .notifications .notification-counter .notifications-title{
     font-weight: 800;
     font-size: 18px;
-    color: rgb(28, 32, 43);
+    color: var(--very-dark-blue);
 }
 
 .notifications .notification-counter .notification-number{
     margin-left: 10px;
-    background-color: rgb(10, 49, 123);
-    color: white;
+    background-color: var(--blue);
+    color: var(--white);
     border-radius: 15%;
     padding: 1px 12px;
 }
@@ -62,7 +64,7 @@ body {
 .notifications .notification-counter .mark-as-read{
     text-align: end;
     font-size: 14px;
-    color: rgb(94, 103, 120);
+    color: var(--dark-grayish-blue);
 }
 
 .notifications .notification{
@@ -73,7 +75,7 @@ body {
 }
 
 .notifications .unread-notification{
-    background-color: rgb(247, 250, 253);
+    background-color: var(--very-light-grayish-blue);
 }
 
 .notifications .notification img{
@@ -85,12 +87,12 @@ body {
 .notifications .notification .notification-description{
     margin-left: 20px;
     font-size: 14px;
-    color: rgb(94, 103, 120);
+    color: var(--dark-grayish-blue);
 }
 
 .notifications .notification .notification-description .username{
     font-weight: 800;
-    color: rgb(28, 32, 43);
+    color: var(--very-dark-blue);
 }
 
 .notifications .notification .notification-description .post{
@@ -99,14 +101,14 @@ body {
 
 .notifications .notification .notification-description .group{
     font-weight: 800;
-    color: rgb(10, 49, 123);
+    color: var(--blue);
 }
 
 .dot {
     height: 7px;
     width: 7px;
     margin-bottom: 2px;
-    background-color: rgb(246, 83, 81);
+    background-color: var(--red);
     border-radius: 50%;
     display: inline-block;
     align-items: center;
