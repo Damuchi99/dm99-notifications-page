@@ -72,6 +72,7 @@ body {
     text-align: end;
     font-size: 14px;
     color: var(--dark-grayish-blue);
+    cursor: pointer;
 }
 
 .notifications .notification{
@@ -98,15 +99,18 @@ body {
 .notifications .notification .notification-description .username{
     font-weight: 800;
     color: var(--very-dark-blue);
+    cursor: pointer;
 }
 
 .notifications .notification .notification-description .post{
     font-weight: 800;
+    cursor: pointer;
 }
 
 .notifications .notification .notification-description .group{
     font-weight: 800;
     color: var(--blue);
+    cursor: pointer;
 }
 
 .notifications .notification .notification-description .time{
@@ -118,13 +122,16 @@ body {
     border-radius: 5px;
     padding: 15px;
     margin: 10px 0px;
+    cursor: pointer;
 }
 
-.notifications .notifications .post-image{
+.notifications .notification .post-image{
     float: right;
+    cursor: pointer;
 }
 
-.notifications .notification .profile, .notifications .notification .post-image{
+.notifications .notification .profile,
+.notifications .notification .post-image{
     max-width: 40px;
     max-height: 40px;
 }
@@ -137,4 +144,15 @@ body {
     border-radius: 50%;
     display: inline-block;
     align-items: center;
+}
+
+.notifications .notification-counter .mark-as-read:hover,
+.notifications .notification .notification-description .username:hover,
+.notifications .notification .notification-description .post:hover,
+.notifications .notification .notification-description .group:hover{
+    color: var(--blue);
+}
+
+.notifications .notification .notification-description .message:hover{
+    background-color: var(--light-grayish-blue-1);
 }
