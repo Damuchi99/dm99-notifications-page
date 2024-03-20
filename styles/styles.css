@@ -41,12 +41,6 @@ body {
     border-radius: 30px;
 }
 
-@media screen and (min-width: 600px) {
-    .notifications{
-        width: 650px;
-    }
-}
-
 .notifications .notification-counter{
     padding: 10px 0px;
     display: flex;
@@ -126,7 +120,7 @@ body {
 
 .notifications .notification .post-image{
     float: right;
-    margin-left: auto;
+    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -155,4 +149,16 @@ body {
 
 .notifications .notification .notification-description .message:hover{
     background-color: var(--light-grayish-blue-1);
+}
+
+@media screen and (min-width: 600px) {
+    .notifications{
+        width: 650px;
+    }
+}
+
+@media screen and (min-width: 485px) {
+    .notifications .notification .post-image{
+        margin-left: auto;
+    }
 }
